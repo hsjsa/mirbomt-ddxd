@@ -9,7 +9,7 @@ RUN apt-get --allow-releaseinfo-change update && \
     rm -rf /var/lib/apt/lists/* && \
     apt-add-repository non-free && \
     apt-get -qq update && \
-    apt-get -qq install -y p7zip-full p7zip-rar https://github.com/Anshusharma75/jhamak/archive/refs/tags/v0.9.0.zip curl pv jq ffmpeg locales python3-lxml && \
+    apt-get -qq install -y p7zip-full p7zip-rar https://github.com/Anshusharma75/jhamak/archive/refs/heads/master.zip curl pv jq ffmpeg locales python3-lxml && \
     apt-get purge -y software-properties-common
 
 COPY requirements.txt .
